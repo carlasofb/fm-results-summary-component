@@ -1,0 +1,217 @@
+body {
+    background-color: beige;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    @media (max-width: 375px) {
+        margin: 0;
+    }
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format('truetype');
+  }
+
+.results-wrapper {
+    max-width: 500px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+
+    @media (max-width: 375px) {
+        flex-direction: column;
+    }
+
+    .grid-50 {
+        @media (min-width: 1000px) {
+            width: 50%;
+        }
+        
+    }
+
+    p {
+        margin: 16px;
+    }
+
+    .result-overall {
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        color: white;
+        border-radius: 20px;
+        padding: 20px;
+
+        .circle-numbers {
+            background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+
+            @media (max-width: 375px) {
+                width: 120px;
+                height: 120px;
+            }
+
+            p {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .result-details {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .summary-title {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+
+            @media (max-width: 375px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .white {
+        color: hsl(0, 0%, 100%);
+    }
+
+    .pale-blue {
+        color: hsl(221, 100%, 96%);
+    }
+
+    .light-lavender {
+        color: hsl(241, 100%, 89%);
+    }
+
+    .dark-gray-blue {
+        color: hsl(224, 30%, 27%);
+    }
+
+    .text-small {
+        font-size: 13px;
+    }
+
+    .text-normal {
+        font-size: 14px;
+    }
+
+    .text-large {
+        font-size: 22px;
+    }
+
+    .text-largest {
+        font-size: 44px;
+    }
+
+    .text-bold {
+        font-weight: 700;
+    }
+
+    .text-boldest {
+        font-weight: 800;
+    }
+
+    .type-text {
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 20px;
+    }
+
+    .result-value {
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 4px;
+    }
+
+    .total-value {
+        font-size: 14px;
+        color: hsla(224, 30%, 27%, 60%);
+    }
+
+    .block {
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            margin-right: 6px;
+        }
+
+        .type-colored,
+        .values {
+            display: flex;
+        }
+
+        .type-colored {
+            align-items: center;
+        }
+
+        &-reaction {
+            @extend .block;
+            background-color: hsla(0, 100%, 67%, 15%);
+
+            .type-text {
+                color: hsla(0, 100%, 67%, 80%);
+            }
+        }
+
+        &-memory {
+            @extend .block;
+            background-color: hsla(39, 100%, 56%, 15%);
+
+            .type-text {
+                color: hsla(39, 100%, 56%, 80%);
+            }
+        }
+
+        &-verbal {
+            @extend .block;
+            background-color: hsla(166, 100%, 37%, 15%);
+
+            .type-text {
+                color: hsla(166, 100%, 37%, 80%);
+            }
+        }
+
+        &-visual {
+            @extend .block;
+            background-color: hsla(234, 85%, 45%, 15%);
+
+            .type-text {
+                color: hsla(234, 85%, 45%, 80%);
+            }
+        }
+    }
+
+    .continue-btn {
+        background-color: hsl(224, 30%, 27%);
+        color: hsl(221, 100%, 96%);
+        font-weight: 600;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        width: 100%;
+        height: 40px;
+        cursor: pointer;
+
+        &:hover,
+        &:active {
+            background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        }
+    }
+}

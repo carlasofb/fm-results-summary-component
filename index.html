@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 20px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="results-wrapper">
+<div class="result-overall grid-50">
+  <p class="light-lavender">Your Result</p>
+  
+  <div class="circle-numbers">
+    <p class="pale-blue text-largest text-boldest">76</p>
+    <p class="light-lavender text-small">of 100</p>
+  </div>
+  <p class="pale-blue text-large text-bold">Great</p>
+  <p class="light-lavender text-normal">You scored higher than 65% of the people who have taken these tests.</p>
+</div>
+
+<div class="result-details dark-gray-blue grid-50">
+  <p class="summary-title">Summary</p>
+
+  <div class="block block-reaction">
+    <div class="type-colored">
+      <img src="assets/images/icon-reaction.svg" width="16" height="16"/>
+      <span class="type-text">Reaction</span>
+    </div>
+    <div class="values">
+      <span class="result-value">80</span>
+      <span class="total-value"> / 100</span>
+    </div>
+  </div>
+
+  <div class="block block-memory">
+    <div class="type-colored">
+      <img src="assets/images/icon-memory.svg" width="16" height="16" />
+      <span class="type-text">Memory</span>
+    </div>
+    <div class="values">
+      <span class="result-value">92</span>
+      <span class="total-value"> / 100</span>
+    </div>
+  </div>
+
+  <div class="block block-verbal">
+    <div class="type-colored">
+      <img src="assets/images/icon-verbal.svg" width="16" height="16"/>
+      <span class="type-text">Verbal</span>
+    </div>
+    <div class="values">
+      <span class="result-value">61</span>
+      <span class="total-value"> / 100</span>
+    </div>
+  </div>
+
+  <div class="block block-visual">
+    <div class="type-colored">
+      <img src="assets/images/icon-visual.svg" width="16" height="16"/>
+      <span class="type-text">Visual</span>
+    </div>
+    <div class="values">
+      <span class="result-value">72</span>
+      <span class="total-value"> / 100</span>
+    </div>
+  </div>
+
+  <button class="continue-btn">Continue</button>
+  </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Carla Bernardino</a>.
+  </div>
+</body>
+</html>
